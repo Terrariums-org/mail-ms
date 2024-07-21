@@ -1,8 +1,8 @@
 import { HttpStatus, Inject, Injectable } from '@nestjs/common';
 import { RpcException } from '@nestjs/microservices';
-import { EmailDTO } from 'src/mail/domain/dto/email.dto';
-import { EmailRepositoryI } from 'src/mail/domain/repository/emailRepository';
-import { NodeMailerImp } from 'src/mail/infraestructure/ports/nodemailer.port';
+import { EmailDTO } from '../../domain/dto/email.dto';
+import { EmailRepositoryI } from '../../domain/repository/emailRepository';
+import { NodeMailerImp } from '../../infraestructure/ports/nodemailer.port';
 
 @Injectable()
 export class MailService {
